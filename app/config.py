@@ -38,14 +38,91 @@ def load_model_config():
 
 def load_safety_keywords():
     default = {
-        "self_harm": [
+       "self_harm": [
+            # direct suicide intent / ideation
             "kill myself",
+            "killing myself",
             "want to die",
-            "suicide",
+            "wanna die",
+            "want to end my life",
             "end my life",
-            "hang myself",
+            "end it all",
+            "ending it all",
+            "plan to kill myself",
+            "planning to kill myself",
+            "thinking about suicide",
+            "thinking of ending it all",
+            "thinking about dying",
+            "committing suicide",
+            "commit suicide",
+            "attempt suicide",
+            "attempting suicide",
+            "take my own life",
+            "taking my own life",
+            "take their own life",
+            "take his own life",
+            "take her own life",
+            "end my suffering",
+            "time to end it",
+            "this is the end",
+            "decided to end it",
+            "ending everything",
+            "done living",
+            "goodbye world",
+            "goodbye cruel world",
+            "won’t be here much longer",
+            "won’t wake up tomorrow",
+            "if i die tonight",
+            "if i’m gone tomorrow",
+            "last day alive",
+            "i’m done with life",
+            "no reason to live",
+            "life isn’t worth it",
+            "life not worth living",
+            "can’t go on",
+            "can’t do this anymore",
+            "done with everything",
+            "sleep forever",
+            "never wake up",
+            "wish i don’t wake up",
+            "just want peace forever",
+            "want everything to stop",
+            "want to disappear forever",
+            "want to vanish forever",
+            "want to stop existing",
+            "won’t make it",
+            "say goodbye forever",
+            "final goodbye",
+
+            # self-harm behavior
             "cut myself",
-            "ending it all"
+            "cutting myself",
+            "cut my wrists",
+            "cutting again",
+            "hurt myself",
+            "hurting myself",
+            "hurt myself again",
+            "back to cutting",
+            "can’t stop cutting",
+            "bleed out",
+            "slit my wrist",
+            "slit my wrists",
+            "overdose",
+            "took too many pills",
+            "take too many pills",
+            "jump off a bridge",
+            "jump off a building",
+            "shoot myself",
+            "stab myself",
+            "hang myself",
+            "hang it up for good",
+            "self harm",
+            "self-harm",
+            "selfharm",
+            "hurt myself on purpose",
+            "destroy myself",
+            "ending me",
+            "end it myself"
         ]
     }
     try:
@@ -56,4 +133,5 @@ def load_safety_keywords():
     except Exception:
         pass
     return default
+
 
