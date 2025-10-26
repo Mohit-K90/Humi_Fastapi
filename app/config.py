@@ -22,7 +22,7 @@ SAFETY_KEYWORDS_PATH = CONFIG_DIR / "safety_keywords.yaml"
 # Helpers to read YAMLs with fallback defaults
 def load_model_config():
     default = {
-        "model": "gemini-1.5-flash",
+        "model": "gemini-2.5-flash",
         "temperature": 0.2,
         "max_output_tokens": 1000,
         "top_p": 1.0
@@ -56,3 +56,4 @@ def load_safety_keywords():
     except Exception:
         pass
     return default
+
